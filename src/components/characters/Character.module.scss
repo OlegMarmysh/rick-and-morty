@@ -1,0 +1,51 @@
+@import "../../colors";
+
+.characterPage {
+  display: flex;
+  border-radius: 4px;
+  background-color: $color_grey;
+  margin-bottom: 20px;
+  width: 500px;
+  height: 200px;
+  overflow: hidden;
+
+  img {
+    height: 100%;
+    width: 200px;
+  }
+}
+
+.characterInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px 0px 30px;
+
+  span {
+    font-size: 18px;
+    color: $color_orange;
+    opacity: .8;
+    margin-bottom: 15px;
+  }
+  p {
+    margin-bottom: 5px;
+    color: $color_white;
+  }
+}
+
+.characterName {
+  margin-bottom: 10px;
+  a {
+    font-size: 20px;
+    color: $color_yellow;
+    margin-bottom: 5px;
+    transition: .3s;
+
+    &:hover {
+      cursor: pointer;
+      color: $color_orange;
+    }
+  }
+  > span {
+    color: $color_white;
+  }
+}
